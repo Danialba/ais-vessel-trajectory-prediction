@@ -6,11 +6,16 @@ Predict future vessel positions (latitude/longitude) from AIS signals and mariti
 
 ## Data
 
+The models are mainly trained on publically available AIS data.
 
-Included in this repo:
-- `ais_test.csv`, `ais_sample_submission.csv`
-- `merged_data.csv` (AIS + ports/schedules join)
-- `ports.csv`, `vessels.csv`, `schedules_to_may_2024.csv`
+-  ais_train.csv: Training data. This contains the positions of
+689 vessels. The dataset was sampled every 20 minutes, but the timestamps
+for each vessel are irregular.
+- schedules_to_may_2024.csv: Contains the planned arrival destinations and
+time as communicated from the shipping lines for a select 252 vessels.
+- vessels.csv: Data about each vessel
+- ports.csv: Contains information about the ports referenced in
+
 
 
 ## Notebooks & Models
