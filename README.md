@@ -8,7 +8,7 @@ Predict future vessel positions (latitude/longitude) from AIS signals and mariti
 
 The models are mainly trained on publically available AIS data.
 
--  ais_train.csv: Training data. This contains the positions of
+- ais_train.csv: Training data. This contains the positions of
 689 vessels. The dataset was sampled every 20 minutes, but the timestamps
 for each vessel are irregular.
 - schedules_to_may_2024.csv: Contains the planned arrival destinations and
