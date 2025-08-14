@@ -2,15 +2,10 @@
 
 Predict future vessel positions (latitude/longitude) from AIS signals and maritime context.
 
-**Highlights**
-- Time-aware validation to avoid leakage
-- **Two independent modeling approaches** (run separately or ensemble)
-
 ---
 
 ## Data
 
-> The **training dataset is not included** (too large). Place it locally under `data/raw/train.csv`.
 
 Included in this repo:
 - `ais_test.csv`, `ais_sample_submission.csv`
@@ -20,14 +15,12 @@ Included in this repo:
 
 ## Notebooks & Models
 
-You mentioned that the two short notebooks are **different models**. Here’s a clear mapping and suggested renames:
 
-**Current → Suggested**
-- `Report.ipynb` → `01_eda_and_feature_engineering.ipynb`  
+- `01_eda_and_feature_engineering.ipynb`  
   _EDA, data sanity checks, feature engineering, baselines._
-- `Short_notebook1.ipynb` → `02_model_clustered_rf_by_port_distance.ipynb` (**Model A**)  
+- `02_model_clustered_rf_by_port_distance.ipynb` (**Model A**)  
   _Clusters data by `distance_to_port`; trains RandomForest regressors per target/cluster._
-- `Short_notebook2.ipynb` → `03_model_vessel_features_lgbm_rf.ipynb` (**Model B**)  
+- `03_model_vessel_features_lgbm_rf.ipynb` (**Model B**)  
   _Vessel-aware features (rolling stats, metadata merges) with LightGBM/RandomForest._
 
 ### Model A — Clustered RF (distance-to-port)
