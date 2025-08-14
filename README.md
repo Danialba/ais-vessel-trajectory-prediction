@@ -1,6 +1,6 @@
 # AIS Vessel Trajectory Prediction
 
-Predict future vessel positions (latitude/longitude) from AIS signals and maritime context.
+Predict future vessel positions (latitude/longitude) from AIS signals and maritime context. Random Forest and LightGBM.
 
 ---
 
